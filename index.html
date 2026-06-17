@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Company</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#111827;
+            color:white;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+            color:#3b82f6;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#3b82f6;
+        }
+
+        .hero{
+            height:90vh;
+            background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            background:#3b82f6;
+            color:white;
+            padding:15px 30px;
+            border:none;
+            border-radius:8px;
+            text-decoration:none;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#2563eb;
+        }
+
+        section{
+            padding:70px 50px;
+        }
+
+        .titulo{
+            text-align:center;
+            margin-bottom:50px;
+            font-size:40px;
+            color:#111827;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#3b82f6;
+        }
+
+        .nosotros{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:40px;
+            align-items:center;
+        }
+
+        .nosotros img{
+            width:100%;
+            border-radius:15px;
+        }
+
+        .contacto{
+            background:#111827;
+            color:white;
+            text-align:center;
+        }
+
+        .contacto p{
+            margin:15px 0;
+        }
+
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+            }
+
+            nav{
+                margin-top:15px;
+            }
+
+            .hero-content h1{
+                font-size:40px;
+            }
+
+            .nosotros{
+                grid-template-columns:1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Nova Company</div>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+            <a href="informacion.html">informacion</a>
+            <a href="productos.html">Productos</a>
+        </nav>
+    </header>
+
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Innovación y Calidad</h1>
+            <p>Una empresa moderna dedicada a brindar los mejores servicios.</p>
+            <a href="#servicios" class="btn">Ver Servicios</a>
+        </div>
+    </section>
+
+
+    <section id="servicios">
+        <h2 class="titulo">Nuestros Servicios</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Servicio 1</h3>
+                <p>
+                    Le ofrecemos de las mejores marcas de computadoras y al mejor precio.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Servicio 2</h3>
+                <p>
+                   Le ofrecemos las marcas mas populares y buenas de telefonos moviles al precio mas acomodado.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Servicio 3</h3>
+                <p>
+                    Le ofrecemos mantenimiento para su computadora y movil.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="nosotros">
+        <h2 class="titulo">Sobre Nosotros</h2>
+
+        <div class="nosotros">
+
+            <div>
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="empresa">
+            </div>
+
+            <div>
+                <h3 style="font-size:30px; margin-bottom:20px;">
+                    Somos una empresa innovadora
+                </h3>
+
+            
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contacto" id="contacto">
+        <h2 class="titulo" style="color:white;">Contacto</h2>
+
+        <p>📍 Dirección de la empresa</p>
+        <p>📞 +504 0000-0000</p>
+        <p>✉️ correo@empresa.com</p>
+    </section>
+
+
+    <footer>
+        <p>© 2026 Nova Company - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

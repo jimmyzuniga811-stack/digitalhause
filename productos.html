@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Productos</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+header h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#111827;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.info{
+    padding:25px;
+}
+
+.info h2{
+    color:#3b82f6;
+    margin-bottom:15px;
+}
+
+.info p{
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.precio{
+    font-size:28px;
+    font-weight:bold;
+    color:#111827;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    background:#3b82f6;
+    color:white;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.boton:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+.extra{
+    margin-top:70px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.extra h2{
+    margin-bottom:20px;
+    color:#3b82f6;
+}
+
+.extra p{
+    line-height:1.9;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:35px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Nuestros Productos</h1>
+    <p>Calidad, tecnología e innovación para nuestros clientes.</p>
+</header>
+
+<div class="contenedor">
+
+    <h2 class="titulo">Productos Destacados</h2>
+
+    <div class="productos">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="producto">
+
+            <div class="info">
+                <h2>Producto 1</h2>
+
+        
+
+                <a href="producto1.html" class="boton">Mas informacion</a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="producto">
+
+            <div class="info">
+                <h2>Producto 2</h2>
+
+            
+
+                <a href="producto2.html" class="boton">Más Información</a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.H6ZWYHr870laa9o_h7VptQHaE5?r=0&cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="producto">
+
+            <div class="info">
+                <h2>Producto 3</h2>
+
+               
+
+                <a href="producto3.html" class="boton">Más Información</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="extra">
+        <h2>¿Por qué elegir nuestros productos?</h2>
+
+        <p>
+            Nuestra empresa trabaja constantemente para ofrecer productos
+            modernos, seguros y de excelente calidad. Cada producto es
+            seleccionado cuidadosamente para brindar una experiencia
+            satisfactoria a nuestros clientes.
+        </p>
+
+        <p>
+            Nos enfocamos en la innovación, el rendimiento y la durabilidad,
+            permitiendo que nuestros usuarios disfruten de tecnología moderna
+            y confiable.
+        </p>
+
+        <p>
+            Además, contamos con garantía, soporte y atención personalizada
+            para brindar mayor confianza y seguridad.
+        </p>
+
+        <br>
+
+        <a href="index.html" class="boton">Volver al Inicio</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Nova Company - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
